@@ -8,9 +8,9 @@ class Mail:
         sleep(2)
         self.driver.switch_to.frame(0)  # 切换到表单
         self.driver.find_element(By.NAME,"email").clear()  #清空文本框
-        self.driver.find_element(By.NAME,"email").send_keys("123456")
+        self.driver.find_element(By.NAME,"email").send_keys("123")  #输入账号
         self.driver.find_element(By.NAME,"password").clear()
-        self.driver.find_element(By.NAME,"password").send_keys("123456")
+        self.driver.find_element(By.NAME,"password").send_keys("123")  #输入密码
         self.driver.find_element(By.ID,"dologin").click()
     # 退出
     def logout(self):
